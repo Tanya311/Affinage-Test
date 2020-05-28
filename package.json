@@ -1,0 +1,17 @@
+{
+  "name": "affinagetest",
+  "version": "1.0.0",
+  "description": "Тестовое задание AFFINAGE",
+  "main": "index.js",
+  "dependencies": {
+    "underscore": "^1.10.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stepina Tatiana",
+  "license": "ISC"
+}
