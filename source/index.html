@@ -7,6 +7,102 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <h1>AFFINAG</h1>
+    <head class="page-head">
+      <a href="" class="logo">
+        <img src="img/logo.svg" alt="Логотип AFFINAGE" width="23px" height="24px">
+      </a>
+      <nav class="navigation">
+        <button class="button navigation__button" type="button">
+          <svg  width="20px" height="15px"><use xlink:href="img/sprite.svg#icon-menu"></use></svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </head>
+
+    <main class="page-main">
+      <h1 class="page-main__title">AFFINAGE</h1>
+      <p class="page-main__text page-main__text--task">Тестовое задание</p>
+      <p class="page-main__text page-main__text--slogan">Очень хороший слоган</p>
+      <div class="rect">
+        <svg width="282" height="177" fill="none" stroke="#000"><use xlink:href="img/sprite.svg#icon-rect"></use></svg>
+      </div>
+      <section class="galery">
+        <h2 class="visually-hidden">Галерея фотографий</h2>
+        <div class="galery__photo galery__photo--showed-back">
+          <picture>
+            <source media="(min-width: 1300px)"
+              srcset="img/photo-slide1.jpg">
+            <img src="img/photo-slide1mobile.jpg" alt="Фотография арки" width="320px" height="318px">
+          </picture>
+          <div class="galery__mask"></div>
+        </div>
+        <div class="galery__photo galery__photo--none">
+          <picture>
+            <source media="(min-width: 1300px)"
+              srcset="img/photo-slide2.jpg">
+            <img src="img/photo-slide2.jpg" alt="Фотография цифровой фабрики" width="320px" height="318px">
+          </picture>
+          <div class="galery__mask"></div>
+        </div>
+        <div class="galery__photo galery__photo--showed-front">
+          <picture>
+            <source media="(min-width: 1300px)"
+              srcset="img/photo-slide3.jpg">
+            <img src="img/photo-slide3mobile.jpg" alt="Фотография мотоциклиста" width="320px" height="318px">
+          </picture>
+          <div class="galery__mask"></div>
+        </div>
+        <div class="galery__buttons">
+          <button class="button button--prev">
+            <svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-arrow-left"></use></svg>
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="button button--next">
+            <svg width="25" height="25"><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg>
+            <span class="visually-hidden">Следущий слайд</span>
+          </button>
+        </div>
+      </section>
+      <div class="numbers">
+        <ul class="numbers__list">
+          <li class="numbers__item">(1)</li>
+          <li class="numbers__item">(2)</li>
+        </ul>
+        <span class="number-rect__item number-rect__item--small">51</span>
+        <span class="number-rect__item number-rect__item--small">Ural <br> 03</span>
+        <ul class="numbers__list-fraction">
+          <li class="numbers__item-fraction numbers__item-fraction--numerator">13_</li>
+          <li class="numbers__item-fraction numbers__item-fraction--denominator">7</li>
+        </ul>
+      </div>
+      <ul class="letters">
+        <li class="letters__item letters__item--a">A</li>
+        <li class="letters__item letters__item--f">F</li>
+        <li class="letters__item letters__item--g">G</li>
+      </ul>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__circle">
+        <picture>
+          <source media="(min-width: 1300px)"
+            srcset="img/circle-decstop.png">
+          <img src="img/circle-mobile.png" alt="Фото кота2" width="110" height="55">
+        </picture>
+      </div>
+      <ul class="page-footer__letters-list page-footer__letters-list--first">
+        <li class="page-footer__letters-item page-footer__letters-item--a">A</li>
+        <li class="page-footer__letters-item page-footer__letters-item--f">F</li>
+        <li class="page-footer__letters-item page-footer__letters-item--ff">F</li>
+        <li class="page-footer__letters-item page-footer__letters-item--i">I</li>
+        <li class="page-footer__letters-item page-footer__letters-item--n">N</li>
+      </ul>
+      <ul class="page-footer__letters-list page-footer__letters-list--second">
+        <li class="page-footer__letters-item page-footer__letters-item--aa">A</li>
+        <li class="page-footer__letters-item page-footer__letters-item--g">G</li>
+        <li class="page-footer__letters-item page-footer__letters-item--e">E</li>
+      </ul>
+    </footer>
+    <script src="js/slider.js"></script>
   </body>
 </html>
