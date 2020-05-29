@@ -37,10 +37,158 @@
 
 .page-footer__circle {
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 280px 20px 270px;
+  }
+
+  .page-footer__icon-triangle {
+    &--one {
+      bottom: 30px;
+      left: 600px;
+      z-index: 10;
+    }
+
+    &--black-one {
+      top: 150px;
+      right: 90px;
+      z-index: 0;
+    }
+  }
+
+  .page-footer__circle img {
+    width: 215px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__letters-list {
+    @include list-style();
+    display: flex;
+    justify-content: space-between;
+
+    &--second {
+      width: 230px;
+      height: 55px;
+    }
+
+    &--first {
+      width: 273px;
+      height: 75px;
+    }
+
+  }
+
+  .page-footer__letters-item {
+    &--a {
+      align-self: flex-end;
+      margin-bottom: 10px;
+    }
+
+    &--f {
+      align-self: flex-start;
+    }
+
+    &--ff {
+      align-self: flex-end;
+    }
+
+    &--i {
+      align-self: flex-start;
+      margin-right: 10px;
+      margin-top: 15px;
+    }
+
+    &--n {
+      align-self: flex-end;
+      margin-bottom: -13px;
+    }
+
+    &--aa {
+      align-self: flex-start;
+    }
+
+    &--g {
+      align-self: center;
+      margin-top: -5px;
+      margin-right: 7px;
+    }
+
+    &--e {
+      align-self: flex-end;
+      margin-bottom: -13px;
+      margin-right: 1px;
+    }
+  }
+
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 280px 20px 270px;
+  }
+
+  .page-footer__icon-triangle {
+    &--two,
+    &--black-two {
+      display: block;
+      position: absolute;
+    }
+
+    &--one,
+    &--black-one {
+      position: absolute;
+    }
+
+    &--one {
+      bottom: -10px;
+      left: 451px;
+      z-index: 10;
+    }
+
+    &--black-one {
+      top: auto;
+      bottom: 78px;
+      left: 192px;
+      z-index: 10;
+    }
+
+    &--two {
+      bottom: 18px;
+      right: 452px;
+    }
+
+    &--black-two {
+      bottom: 37px;
+      right: 217px;
+    }
+
+  }
+
+  .page-footer__circle img {
+    width: 215px;
+    height: auto;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    border-bottom: 8px solid $bg-color;
+  }
+}
 

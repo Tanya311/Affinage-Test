@@ -10,11 +10,11 @@
   @include list-style();
 }
 
-.numbers__item-fraction--numerator {
+.numbers__list-fraction {
   font-family: $font-secondary;
   font-style: italic;
   position: absolute;
-  bottom: 8px;
+  bottom: 0;
   right: 0;
   z-index: 10;
   width: 0;
@@ -23,4 +23,148 @@
   border: 52px solid transparent;
   border-right: 52px solid $bg-color;
   border-bottom: 52px solid $bg-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  .numbers__ural {
+    display: block;
+    position: absolute;
+    z-index: 22;
+
+    padding: 30px 30px 30px 25px;
+    font-size: 17px;
+    font-family: $font-secondary;
+    color: rgb(39, 37, 37);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    letter-spacing: 1px;
+    top: 500px;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+
+    background: url("../img/ellipse.png") no-repeat;
+
+}
+
+.numbers__list-fraction {
+  padding: 100px 25px 28px 26px;
+  box-sizing: border-box;
+  font-family: $font-secondary;
+
+  font-style: italic;
+  position: absolute;
+  bottom: 38px;
+  right: 80px;
+
+  z-index: 10;
+  width: 120px;
+  height: 200px;
+  background-color: $bg-color;
+
+  border: none;
+  }
+
+  .numbers__item-fraction {
+    &--numerator {
+    font-size: 45px;
+    position: relative;
+    letter-spacing: 8px;
+
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 17px;
+      height: 3px;
+      background-color: #000;
+      bottom: 10px;
+      left: 50px;
+
+    }
+  }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .numbers__list,
+  .numbers__number,
+  .numbers__item-fraction--denominator {
+    display: block;
+    position: absolute;
+    z-index: 22;
+  }
+
+.numbers__list,
+.numbers__list-fraction {
+  @include list-style();
+}
+
+.numbers__list {
+  top: 80px;
+  left: 222px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    font-size: 12px;
+    font-family: $font-secondary;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    letter-spacing: 3px;
+}
+
+.numbers__number {
+  font-size: 28px;
+  font-family: $font-secondary;
+  color: rgba(0, 0, 0, 0.502);
+  line-height: 1.2;
+  text-align: left;
+  top: 24px;
+  left: 555px;
+  transform: rotate(270deg);
+  letter-spacing: 8px;
+}
+
+.numbers__ural {
+    color: rgb(255, 255, 255);
+    top: 115px;
+    left: 585px;
+}
+
+.numbers__list-fraction {
+  padding: 290px 25px 28px 26px;
+  box-sizing: border-box;
+  font-family: $font-secondary;
+
+  font-style: italic;
+  position: absolute;
+  bottom: 38px;
+  right: 277px;
+
+  z-index: 10;
+  width: 140px;
+  height: 380px;
+  background-color: $bg-color;
+
+  border: none;
+  }
+
+  .numbers__item-fraction {
+  &--denominator {
+    font-size: 17px;
+    font-family: "Geometria";
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    line-height: 0.3;
+    margin-left: 50px;
+    }
+
+  }
+
 }

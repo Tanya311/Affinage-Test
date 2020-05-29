@@ -9,4 +9,43 @@
 
 .page-header__logo {
   margin-top: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 3px solid $color-secondary;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include width-block(768px);
+    padding: 35px;
+  }
+
+  .page-header__logo {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include width-block(1440px);
+    padding: 35px;
+  }
+
+  .page-header__logo {
+    margin-top: 5px;
+
+    &:focus {
+      outline: 3px solid $bg-color;
+    }
+  }
+
 }

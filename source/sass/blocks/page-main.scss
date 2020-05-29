@@ -5,11 +5,6 @@
 
 .page-main__title {
   display: none;
-  font-size: 140px;
-  color: $color-secondary;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: 50.4px;
 }
 
 .page-main__text {
@@ -39,10 +34,126 @@
   top: -125px;
   right: -143px;
 
-  transform: rotate(90deg)
+  transform: rotate(90deg);
+  z-index: -1;
 }
 
 .page-main__rect svg {
   width: 400px;
   height: 200px;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .page-main__container {
+    @include width-block(768px);
+    padding: 0 77px 0 20px;
+  }
+
+  .page-main__title {
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: calc(50% + 22px);
+    top: 117px;
+    transform: translateX(-50%);
+    font-size: 80px;
+    color: $color-secondary;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 30.4px;
+    z-index: 12;
+  }
+
+  .page-main__text {
+    font-size: 9px;
+    color: rgba(0, 0, 0, 0.7);
+
+    &--task {
+      display: block;
+      font-size: 12px;
+      font-family: $font-secondary;
+      color: rgba(129, 62, 62, 0.6);
+      font-style: italic;
+      letter-spacing: 0.8px;
+      line-height: 1.2;
+      position: absolute;
+      z-index: 10;
+      left: -55px;
+      top: calc(50% - 5px);
+      transform: translateY(-50%) rotate(270deg);
+    }
+
+    &--slogan {
+      margin: 0;
+      position: absolute;
+      z-index: 10;
+      left: 270px;
+      top: 490px;
+    }
+  }
+
+  .page-main__rect {
+    position: absolute;
+    top: -100px;
+    right: auto;
+    left: 337px;
+
+    transform: rotate(270deg);
+    z-index: 1;
+  }
+
+  .page-main__rect svg {
+    width: 200px;
+    height: 282px;
+  }
+
+}
+
+
+
+@media (min-width: $desktop-width) {
+  .page-main__container {
+    @include width-block(1440px);
+    padding: 0 20px 0 20px;
+  }
+
+  .page-main__title {
+    left: calc(50% + 22px);
+    top: 117px;
+    transform: translateX(-50%);
+    font-size: 140px;
+    color: $color-secondary;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 50.4px;
+    z-index: 12;
+  }
+
+  .page-main__text {
+    font-size: 9px;
+    color: rgba(0, 0, 0, 0.5);
+
+    &--task {
+      color: rgba(0, 0, 0, 0.4);
+      left: -32px;
+    }
+
+    &--slogan {
+      left: 282px;
+      top: 382px;
+    }
+  }
+
+  .page-main__rect {
+    position: absolute;
+    top: 165px;
+    right: auto;
+    left: 337px;
+
+    transform: rotate(0deg);
+    z-index: 10;
+  }
+
 }

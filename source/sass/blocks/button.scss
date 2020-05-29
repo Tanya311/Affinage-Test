@@ -1,13 +1,63 @@
-button {
+.button {
   border: none;
   background-color: transparent;
   cursor: pointer;
 
-  &--prev {
-    opacity: 0.5;
+  &--navigation {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 3px solid $color-secondary;
+    }
   }
 
+  &--prev,
   &--next {
-    opacity: 0.5;
+    &:hover svg {
+      width: 40px;
+      height: 40px;
+      margin: -5px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      outline: 3px solid $color-secondary;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--navigation {
+      width: 55px;
+      height: 55px;
+      background: url("../img/circle-main.png") no-repeat;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--navigation {
+      top: 108px;
+      right: 80px;
+
+      &:focus {
+        outline: 3px solid $bg-color;
+      }
+    }
   }
 }

@@ -16,3 +16,36 @@ body {
   overflow: hidden;
   position: relative;
 }
+
+img {
+  min-width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: linear-gradient(to bottom right, #f7e611, #ffffff);
+
+  }
+
+
+  .container {
+    @include width-block(768px);
+    height: 775px;
+  }
+}
+
+
+
+@media (min-width: $desktop-width) {
+  body {
+    background: #ffffff;
+  }
+
+
+  .container {
+    @include width-block(1440px);
+    height: 800px;
+    background: linear-gradient(to right, #fefefe 0%, #fefefe 50%, #ffffff 50% #ffffff 100%);
+  }
+}

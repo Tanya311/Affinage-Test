@@ -29,3 +29,41 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .letters {
+    font-size: 70px;
+    width: 150px;
+    height: 262px;
+    top: 300px;
+    left: 75px;
+  }
+
+  .letters__item {
+    &--a {
+      align-self: flex-start;
+      z-index: 10;
+    }
+    &--e {
+      position: absolute;
+      z-index: 0;
+      top: 83px;
+      left: 177px;
+    }
+    &--g {
+      position: static;
+      align-self: flex-end;
+      z-index: 9;
+    }
+  }
+  }
+
+@media (min-width: $desktop-width) {
+.letters {
+  font-size: 80px;
+  top: -68px;
+  left: auto;
+  right: 312px;
+}
+
+}
+
