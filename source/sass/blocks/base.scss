@@ -39,13 +39,44 @@ img {
 
 @media (min-width: $desktop-width) {
   body {
-    background: #ffffff;
+    background: transparent;
+
+
   }
 
 
   .container {
     @include width-block(1440px);
     height: 800px;
-    background: linear-gradient(to right, #fefefe 0%, #fefefe 50%, #ffffff 50% #ffffff 100%);
+    background: transparent;
+    &::before {
+      z-index: -12;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 82px;
+
+      width: 900px;
+      height: 810px;
+
+      background-color: transparent;
+
+      box-shadow: 0 0 57px rgba(#000000, 0.1);
+    }
+
+    &::after {
+      z-index: -5;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 50%;
+      height: 800px;
+
+      background-color: #ffffff;
+
+      box-shadow: 0 0 57px rgba(#000000, 0.1);
+    }
   }
 }

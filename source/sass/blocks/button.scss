@@ -54,6 +54,7 @@
     &--navigation {
       top: 108px;
       right: 80px;
+      z-index: 10;
 
       &:focus {
         outline: 3px solid $bg-color;
