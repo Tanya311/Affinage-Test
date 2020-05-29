@@ -1,6 +1,11 @@
 $font-primary: "Philosopher", "Georgia", serif;
 $font-secondary: "Geometria", "Arial", sans-serif;
 
+$color-primary: #000000;
+$color-secondary: #ffffff;
+
+$bg-color: #f7e611;
+
 $tablet-width: 768px;
 $desktop-width: 1300px;
 $mobile-width-only: 767px;
@@ -11,4 +16,10 @@ $mobile-width-only: 767px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+}
+
+@mixin list-style() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

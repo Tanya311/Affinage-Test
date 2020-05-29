@@ -1,0 +1,60 @@
+.galery {
+  position: relative;
+  min-height: 494px;
+}
+
+.galery__photo {
+  position: absolute;
+
+  &--showed-front {
+    bottom: 0;
+    z-index: 3;
+  }
+
+  &--showed-back {
+    z-index: 1;
+  }
+}
+.galery__photo--showed-front .galery__mask {
+  width: 100%;
+  height: auto;
+  height: 318px;
+  background-color: rgb(247, 230, 17);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.galery__photo--showed-back {
+  width: 240px;
+  height: 184px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.galery__photo--showed-back .galery__mask {
+  width: 100%;
+  height: auto;
+  height: 318px;
+  background-color: rgb(247, 230, 17);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.galery__photo--none {
+  display: none;
+}
+
+.galery__buttons {
+  position: absolute;
+  left: 8px;
+  bottom: 141px;
+  z-index: 10;
+  display: flex;
+
+  justify-content: space-between;
+  width: 307px;
+}

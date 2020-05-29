@@ -1,0 +1,13 @@
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--prev {
+    opacity: 0.5;
+  }
+
+  &--next {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,12 @@
+
+.page-header {
+  @include width-block(320px);
+  padding: 10px 15px 35px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  margin-top: 5px;
+}

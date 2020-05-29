@@ -1,0 +1,48 @@
+.page-main__container {
+  @include width-block(320px);
+  position: relative;
+}
+
+.page-main__title {
+  display: none;
+  font-size: 140px;
+  color: $color-secondary;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 50.4px;
+}
+
+.page-main__text {
+  font-size: 9px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Philosopher";
+  font-weight: 400;
+  font-style: italic;
+  transform: rotate(270deg);
+  text-transform: lowercase;
+
+  &--task {
+    display: none;
+  }
+
+  &--slogan {
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    left: -18px;
+    top: 158px;
+  }
+}
+
+.page-main__rect {
+  position: absolute;
+  top: -125px;
+  right: -143px;
+
+  transform: rotate(90deg)
+}
+
+.page-main__rect svg {
+  width: 400px;
+  height: 200px;
+}
