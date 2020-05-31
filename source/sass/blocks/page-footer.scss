@@ -1,13 +1,12 @@
-.page-footer__letters-list {
-  @include list-style();
-  display: none;
-
-}
-
 .page-footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page-footer__letters-list {
+  @include list-style();
+  display: none;
 }
 
 .page-footer__icon-triangle {
@@ -22,40 +21,39 @@
   }
 
   &--one {
-    bottom: 37px;
+    bottom: 30px;
     left: 45px;
+
     z-index: 10;
   }
 
   &--black-one {
     top: 228px;
     right: 28px;
+
     z-index: 8;
   }
-
 }
 
 .page-footer__circle {
-  position: absolute;
   bottom: -7px;
   left: 50%;
   transform: translateX(-50%);
+
+  position: absolute;
   z-index: 10;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 280px 20px 270px;
+    padding: 10px 15px 10px 15px;
   }
 
   .page-footer__icon-triangle {
     &--one {
       bottom: 30px;
       left: 600px;
-      z-index: 10;
     }
 
     &--black-one {
@@ -68,15 +66,21 @@
   .page-footer__circle img {
     width: 215px;
     height: auto;
-    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    position: absolute;
     z-index: 10;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    justify-content: space-between;
+    padding: 30px 280px 20px 268px;
+  }
+
   .page-footer__letters-list {
     @include list-style();
     display: flex;
@@ -91,7 +95,6 @@
       width: 273px;
       height: 75px;
     }
-
   }
 
   .page-footer__letters-item {
@@ -121,6 +124,7 @@
 
     &--aa {
       align-self: flex-start;
+      margin-top: 2px;
     }
 
     &--g {
@@ -136,13 +140,6 @@
     }
   }
 
-  .page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 280px 20px 270px;
-  }
-
   .page-footer__icon-triangle {
     &--two,
     &--black-two {
@@ -150,15 +147,9 @@
       position: absolute;
     }
 
-    &--one,
-    &--black-one {
-      position: absolute;
-    }
-
     &--one {
-      bottom: -10px;
+      bottom: -8px;
       left: 451px;
-      z-index: 10;
     }
 
     &--black-one {
@@ -177,17 +168,10 @@
       bottom: 37px;
       right: 217px;
     }
-
   }
 
   .page-footer__circle img {
-    width: 215px;
-    height: auto;
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    bottom: 85px;
     border-bottom: 8px solid $bg-color;
   }
 }

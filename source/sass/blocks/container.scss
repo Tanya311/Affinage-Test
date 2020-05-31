@@ -1,0 +1,35 @@
+.container {
+  @include width-block(320px);
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    @include width-block(768px);
+    min-height: 760px;
+    height: 100vh;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    @include width-block(1440px);
+    height: 800px;
+    background: transparent;
+
+    &::before {
+      z-index: -6;
+      content: "";
+      position: absolute;
+
+      width: 620px;
+      height: 100vh;
+      top: 500px;
+      left: 8.2%;
+
+      background-color: transparent;
+      box-shadow: 0 0 57px rgba(#000000, 0.1);
+    }
+  }
+}

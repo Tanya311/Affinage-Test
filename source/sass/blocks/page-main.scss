@@ -10,9 +10,11 @@
 .page-main__text {
   font-size: 9px;
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Philosopher";
+  font-family: $font-primary;
   font-weight: 400;
   font-style: italic;
+  text-transform: lowercase;
+
   transform: rotate(270deg);
   text-transform: lowercase;
 
@@ -22,85 +24,88 @@
 
   &--slogan {
     margin: 0;
+    left: -20px;
+    top: 158px;
+
     position: absolute;
     z-index: 10;
-    left: -18px;
-    top: 158px;
   }
 }
 
 .page-main__rect {
-  position: absolute;
-  top: -125px;
-  right: -143px;
-
+  top: -133px;
+  right: -148px;
   transform: rotate(90deg);
+
+  position: absolute;
   z-index: -1;
 }
 
 .page-main__rect svg {
   width: 400px;
-  height: 200px;
+  height: 210px;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .page-main__container {
     @include width-block(768px);
-    padding: 0 77px 0 20px;
+    padding: 0 15px;
   }
 
   .page-main__title {
-    text-align: center;
     display: block;
-    position: absolute;
-    left: calc(50% + 22px);
+    left: calc(50% + 27px);
     top: 117px;
     transform: translateX(-50%);
+
     font-size: 80px;
     color: $color-secondary;
     line-height: 1.2;
     font-weight: 400;
     letter-spacing: 30.4px;
+    text-align: center;
+
+    position: absolute;
     z-index: 12;
   }
 
   .page-main__text {
-    font-size: 9px;
-    color: rgba(0, 0, 0, 0.7);
-
     &--task {
       display: block;
+      left: -55px;
+      top: calc(50% - 5px);
+      transform: translateY(-50%) rotate(270deg);
+
       font-size: 12px;
       font-family: $font-secondary;
       color: rgba(129, 62, 62, 0.6);
       font-style: italic;
       letter-spacing: 0.8px;
       line-height: 1.2;
+
       position: absolute;
       z-index: 10;
-      left: -55px;
-      top: calc(50% - 5px);
-      transform: translateY(-50%) rotate(270deg);
     }
 
     &--slogan {
       margin: 0;
-      position: absolute;
-      z-index: 10;
       left: 270px;
       top: 490px;
+
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 9px;
+
+      position: absolute;
+      z-index: 10;
     }
   }
 
   .page-main__rect {
-    position: absolute;
     top: -100px;
     right: auto;
     left: 337px;
-
     transform: rotate(270deg);
+
     z-index: 1;
   }
 
@@ -108,52 +113,41 @@
     width: 200px;
     height: 282px;
   }
-
 }
-
-
 
 @media (min-width: $desktop-width) {
   .page-main__container {
     @include width-block(1440px);
-    padding: 0 20px 0 20px;
+    padding: 0 80px 0 80px;
+
   }
 
   .page-main__title {
-    left: calc(50% + 22px);
-    top: 117px;
-    transform: translateX(-50%);
+    top: 121px;
     font-size: 140px;
-    color: $color-secondary;
-    line-height: 1.2;
-    font-weight: 400;
     letter-spacing: 50.4px;
-    z-index: 12;
   }
 
   .page-main__text {
-    font-size: 9px;
-    color: rgba(0, 0, 0, 0.5);
-
     &--task {
-      color: rgba(0, 0, 0, 0.4);
       left: -32px;
+      color: rgba(0, 0, 0, 0.4);
     }
 
     &--slogan {
-      left: 282px;
-      top: 382px;
+      left: 284px;
+      top: 380px;
+
+      color: rgba(0, 0, 0, 0.5);
     }
   }
 
   .page-main__rect {
-    position: absolute;
     top: 165px;
     right: auto;
-    left: 337px;
-
+    left: 339px;
     transform: rotate(0deg);
+
     z-index: 10;
   }
-
 }
