@@ -10,7 +10,6 @@ body {
   background-color: #f7e611;
 }
 
-
 .container {
   @include width-block(320px);
   overflow: hidden;
@@ -22,13 +21,10 @@ img {
   height: 100%;
 }
 
-
 @media (min-width: $tablet-width) {
   body {
     background: linear-gradient(to bottom right, #f7e611, #ffffff);
-
   }
-
 
   .container {
     @include width-block(768px);
@@ -36,15 +32,10 @@ img {
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
   body {
     background: transparent;
-
-
   }
-
 
   .container {
     @include width-block(1440px);

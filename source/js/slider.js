@@ -1,53 +1,90 @@
 'use strict'
 const IMAGE_COUNT = 3;
+const ANIMATION_TIMER = 2000;
+const BACK_SLIDE_TIMER = 1000;
 let btnPrev = document.querySelector('.button--prev');
 let btnNext = document.querySelector('.button--next');
 
-let imageFontBlock = document.querySelector('.galery__photo--showed-front');
-let imageBackBlock = document.querySelector('.galery__photo--showed-back');
 let imageFront = document.querySelector('.galery__photo--showed-front img');
 let imageBack = document.querySelector('.galery__photo--showed-back img');
-let i = 1;
-let j = 3;
 
+let counterFront = 1;
+let counterBack = 3;
 
 let changeImageNext = function() {
-  i++;
-  j++;
+  counterFront ++;
+  counterBack ++;
 
-  if (i > IMAGE_COUNT) {
-    i = 1;
+  if (counterFront > IMAGE_COUNT) {
+    counterFront = 1;
   }
 
-  if (j > IMAGE_COUNT) {
-    j = 1;
+  if (counterBack > IMAGE_COUNT) {
+    counterBack = 1;
   }
 
-imageFront.src = 'img/photo-slide' + i + ".jpg";
-imageBack.src = 'img/photo-slide' + j + ".jpg";
+imageFront.src = 'img/photo-slide' + counterFront + ".jpg";
+imageBack.src = 'img/photo-slide' + counterBack + ".jpg";
 };
 
 let changeImagePrev = function () {
-  i--;
-  j--;
-  if (i < 1) {
-    i = 3;
+  counterFront --;
+  counterBack --;
+  if (counterFront < 1) {
+    counterFront = 3;
   }
 
-  if (j < 1) {
-    j = 3;
+  if (counterBack < 1) {
+    counterBack = 3;
   }
 
-  imageFront.src = 'img/photo-slide' + i + ".jpg";
-  imageBack.src = 'img/photo-slide' + j + ".jpg";
+  imageFront.src = 'img/photo-slide' + counterFront + ".jpg";
+  imageBack.src = 'img/photo-slide' + counterBack + ".jpg";
+};
+
+let animationImageNext = function () {
+  imageFront.classList.add("animation__current");
+  setTimeout(function () {
+    imageBack.classList.add("animation__current");
+  }, BACK_SLIDE_TIMER);
+
+  setTimeout(function () {
+    changeImageNext();
+    imageFront.classList.add("animation__next");
+    setTimeout(function () {
+      imageBack.classList.add("animation__next");
+    }, BACK_SLIDE_TIMER);
+    setTimeout(function () {
+      imageFront.removeAttribute("class");
+      imageBack.removeAttribute("class");
+    }, ANIMATION_TIMER);
+  }, ANIMATION_TIMER);
+};
+
+let animationImageprev = function () {
+  imageFront.classList.add("animation__current");
+  setTimeout(function () {
+    imageBack.classList.add("animation__current");
+  }, BACK_SLIDE_TIMER);
+    setTimeout(function () {
+      changeImagePrev();
+      imageFront.classList.add("animation__next");
+      setTimeout(function () {
+        imageBack.classList.add("animation__next");
+      }, BACK_SLIDE_TIMER);
+      setTimeout(function () {
+        imageFront.removeAttribute("class");
+        imageBack.removeAttribute("class");
+      }, ANIMATION_TIMER);
+    }, ANIMATION_TIMER);
 };
 
 let btnNextClickHandler = function () {
-  changeImageNext();
+  animationImageNext();
 };
 
 let btnPrevClickHandler = function () {
-  changeImagePrev();
+  animationImageprev();
 };
 
 btnNext.addEventListener('click', btnNextClickHandler);
