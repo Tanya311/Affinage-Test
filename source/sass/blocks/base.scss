@@ -1,6 +1,7 @@
 body {
   min-width: 320px;
   margin: 0;
+  padding: 0;
   font-family: $font-primary;
   font-size: 25px;
   font-weight: normal;
@@ -17,7 +18,7 @@ img {
 
 @media (min-width: $tablet-width) {
   body {
-    background: linear-gradient(to bottom right, $bg-color, #ffffff);
+    background-color: rgba($bg-color, 0.6);
   }
 }
 

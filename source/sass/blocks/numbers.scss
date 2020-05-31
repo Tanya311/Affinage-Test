@@ -1,3 +1,9 @@
+.numbers {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
 .numbers__list,
 .numbers__number,
 .numbers__ural,
@@ -27,7 +33,7 @@
 .numbers__item-fraction {
   &--numerator {
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 7px;
 
     font-family: $font-secondary;
     font-style: italic;
@@ -42,7 +48,7 @@
     display: block;
     width: 100px;
     height: 100px;
-    top: 500px;
+    bottom: 350px;
     left: 35px;
     padding: 30px 30px 30px 25px;
 
@@ -118,8 +124,8 @@
     justify-content: space-between;
 
     height: 95px;
-    top: 80px;
-    left: 222px;
+    top: -495px;
+    left: 143px;
 
     font-size: 12px;
     font-family: $font-secondary;
@@ -130,8 +136,8 @@
   }
 
   .numbers__number {
-    top: 23px;
-    left: 553px;
+    top: -554px;
+    left: 473px;
     transform: rotate(270deg);
 
     font-size: 28px;
@@ -143,8 +149,8 @@
   }
 
   .numbers__ural {
-    top: 115px;
-    left: 585px;
+    top: -461px;
+    left: 507px;
 
     color: rgb(255, 255, 255);
   }
@@ -153,7 +159,7 @@
     width: 140px;
     height: 380px;
     bottom: 38px;
-    right: 277px;
+    right: 195px;
     padding: 290px 25px 28px 26px;
   }
 

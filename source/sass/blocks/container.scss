@@ -1,13 +1,13 @@
 .container {
   @include width-block(320px);
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet-width) {
   .container {
     @include width-block(768px);
-    min-height: 760px;
+    min-height: 680px;
     height: 100vh;
   }
 }

@@ -8,7 +8,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
-const uglify = require('gulp-uglify');
+const minify = require('gulp-minify');
 
 const svgstore = require("gulp-svgstore");
 const imagemin = require("gulp-imagemin");
@@ -38,6 +38,8 @@ gulp.task("html", function () {
 
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
+    .pipe(minify())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest("build/js/"));
 });
 
