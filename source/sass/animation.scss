@@ -1,9 +1,9 @@
 .animation__current {
-  animation: current 1.5s ease-in forwards;
+  animation: current 1s ease-in forwards;
 }
 
 .animation__next {
-  animation: next 1.5s ease-out forwards;
+  animation: next 1s ease-out forwards;
 }
 
 @keyframes current {
