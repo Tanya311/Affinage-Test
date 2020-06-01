@@ -1,6 +1,5 @@
 "use strict";
 const gulp = require("gulp");
-
 const sourcemap = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
 const plumber = require("gulp-plumber");
@@ -9,10 +8,8 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const minify = require('gulp-minify');
-
 const svgstore = require("gulp-svgstore");
 const imagemin = require("gulp-imagemin");
-
 const server = require("browser-sync").create();
 const del = require("del")
 
