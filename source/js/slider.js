@@ -1,13 +1,13 @@
-'use strict'
+"use strict"
 (function () {
   const IMAGE_COUNT = 3;
   const ANIMATION_TIMER = 2000;
   const BACK_SLIDE_TIMER = 1000;
 
-  let btnPrev = document.querySelector('.button--prev');
-  let btnNext = document.querySelector('.button--next');
-  let imageFront = document.querySelector('.galery__photo--showed-front img');
-  let imageBack = document.querySelector('.galery__photo--showed-back img');
+  let btnPrev = document.querySelector(".button--prev");
+  let btnNext = document.querySelector(".button--next");
+  let imageFront = document.querySelector(".galery__photo--showed-front img");
+  let imageBack = document.querySelector(".galery__photo--showed-back img");
   let counterFront = 1;
   let counterBack = 3;
 
@@ -27,8 +27,8 @@
       counterBack = 1;
     }
 
-    imageFront.src = 'img/photo-slide' + counterFront + ".jpg";
-    imageBack.src = 'img/photo-slide' + counterBack + ".jpg";
+    imageFront.src = "img/photo-slide" + counterFront + ".jpg";
+    imageBack.src = "img/photo-slide" + counterBack + ".jpg";
   };
 
   /**
@@ -47,8 +47,8 @@
       counterBack = 3;
     }
 
-    imageFront.src = 'img/photo-slide' + counterFront + ".jpg";
-    imageBack.src = 'img/photo-slide' + counterBack + ".jpg";
+    imageFront.src = "img/photo-slide" + counterFront + ".jpg";
+    imageBack.src = "img/photo-slide" + counterBack + ".jpg";
   };
 
   /**
@@ -108,6 +108,6 @@
     animationImageprev();
   };
 
-  btnNext.addEventListener('click', btnNextClickHandler);
-  btnPrev.addEventListener('click', btnPrevClickHandler);
+  btnNext.addEventListener("click", btnNextClickHandler);
+  btnPrev.addEventListener("click", btnPrevClickHandler);
 });
