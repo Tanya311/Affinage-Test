@@ -1,97 +1,97 @@
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-Thin.otf");
+  src:  url("../fonts/Geometria-Thin.woff") format("woff"), url("../fonts/Geometria-Thin.otf") format("otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-ThinItalic.otf");
+  src: url("../fonts/Geometria-ThinItalic.woff") format("woff"), url("../fonts/Geometria-ThinItalic.otf") format("otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-ExtraLight.otf");
+  src: url("../fonts/Geometria-ExtraLight.woff") format("woff"), url("../fonts/Geometria-ExtraLight.otf") format("otf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-ExtraLightItalic.otf");
+  src: url("../fonts/Geometria-ExtraLightItalic.woff") format("woff"), url("../fonts/Geometria-ExtraLightItalic.otf") format("otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-Light.otf");
+  src: url("../fonts/Geometria-Light.woff") format("woff"), url("../fonts/Geometria-Light.otf") format("otf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-LightItalic.otf");
+  src: url("../fonts/Geometria-LightItalic.woff") format("woff"), url("../fonts/Geometria-LightItalic.otf") format("otf");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria.otf");
+  src: url("../fonts/Geometria.woff") format("woff"), url("../fonts/Geometria.otf") format("otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-Italic.otf");
+  src: url("../fonts/Geometria-Italic.woff") format("woff"), url("../fonts/Geometria-Italic.otf") format("otf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-Medium.otf");
+  src: url("../fonts/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria-Medium.otf") format("otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-MediumItalic.otf");
+  src: url("../fonts/Geometria-MediumItalic.woff") format("woff"), url("../fonts/Geometria-MediumItalic.otf") format("otf");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-Bold.otf");
+  src: url("../fonts/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold.otf") format("otf");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-BoldItalic.otf");
+  src: url("../fonts/Geometria-BoldItalic.woff") format("woff"), url("../fonts/Geometria-BoldItalic.otf") format("otf");
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-ExtaBlack.otf");
+  src: url("../fonts/Geometria-ExtaBlack.woff") format("woff"), url("../fonts/Geometria-ExtaBlack.otf") format("otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-ExtraBlackItalic.otf");
+  src: url("../fonts/Geometria-ExtraBlackItalic.woff") format("woff"), url("../fonts/Geometria-ExtraBlackItalic.otf") format("otf");
   font-weight: 700;
   font-style: italic;
 }
@@ -99,14 +99,14 @@
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-Heavy.otf");
+  src: url("../fonts/Geometria-Heavy.woff") format("woff"), url("../fonts/Geometria-Heavy.otf") format("otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("../Geometria-HeavyItalic.otf");
+  src: url("../fonts/Geometria-HeavyItalic.woff") format("woff"), url("../fonts/Geometria-HeavyItalic.otf") format("otf");
   font-weight: 800;
   font-style: italic;
 }
@@ -115,7 +115,7 @@
 
 @font-face {
   font-family: "Philosopher", serif;
-  src: url("../fonts/Philosopher-Regular.ttf");
+  src: url("../fonts/Philosopher-Regular.woff") format("woff"), url("../fonts/Philosopher-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -124,7 +124,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("../fontsPhilosopher-Italic.ttf");
+  src: url("../fonts/Philosopher-Italic.woff") format("woff"), url("../fonts/Philosopher-Italic.ttf") format("ttf");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -133,7 +133,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("../Philosopher-BoldItalic.ttf");
+  src: url("../fonts/Philosopher-BoldItalic.woff") format("woff"), url("../fonts/Philosopher-BoldItalic.ttf") format("ttf");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -142,7 +142,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("../fonts/Philosopher-Bold.ttf");
+  src: url("../fonts/Philosopher-Bold.woff") format("woff"), url("../fonts/Philosopher-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

@@ -11,7 +11,8 @@ const minify = require('gulp-minify');
 const svgstore = require("gulp-svgstore");
 const imagemin = require("gulp-imagemin");
 const server = require("browser-sync").create();
-const del = require("del")
+const del = require("del");
+
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -24,7 +25,7 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -82,6 +83,7 @@ gulp.task("refresh", function (done) {
 gulp.task("copy", function () {
     return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
+      "source/css/**",
       "source/js/**",
     ], {
       base: "source"
