@@ -9,7 +9,7 @@ cache:
   - node_modules
 
 script:
-  npm start
+  npm run build
 
 deploy:
   provider: pages
