@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-left" viewBox="0 0 20.002 36">
+  <path id="Shape_20114_20copy_203" data-name="Shape%20114%20copy%203" fill="rgba(0, 0, 0, 0.5)" d="M985.444,501.916L1002.65,484l2.79,2.93L990.972,502l14.468,15.07-2.79,2.93-17.206-17.916,0.08-.084Z" transform="translate(-985.438 -484)"/>
+</symbol><symbol id="icon-arrow-right" viewBox="0 0 20 36">
+  <path id="Shape_20114_20copy_203" fill="rgba(0, 0, 0, 0.5)" data-name="Shape%20114%20copy%203" d="M1200.57,502.315l-17.2,17.916-2.8-2.93,14.48-15.07-14.48-15.07,2.8-2.93,17.2,17.916-0.08.084Z" transform="translate(-1180.56 -484.219)"/>
+</symbol><symbol id="icon-menu" viewBox="0 0 20 14"><g transform="translate(-1379 -42)"><rect width="20" height="2" transform="translate(1379 42)"/><rect width="20" height="2" transform="translate(1379 48)"/><rect width="20" height="2" transform="translate(1379 54)"/></g></symbol><symbol id="icon-rect" viewBox="0 0 178 283">
+  <path id="Path_2" data-name="Path 2" d="M349,266H526L488,548H349V266Z" transform="translate(-348.5 -265.5)"/>
+</symbol><symbol id="icon-triangle" viewBox="0 0 24.063 24.218">
+  <path id="path14" stroke="#000" d="M988.179,776.205c-0.411,0-.821-0.206-1.232-0.206a4.442,4.442,0,0,1-1.027-.616,4.3,4.3,0,0,1-.822-1.232,11.444,11.444,0,0,1-1.027-1.644l-7.6-18.693h-1.027l-10.066,23.213h22.8v-0.822Z" transform="translate(-964.625 -753.313)"/>
+</symbol></svg>
