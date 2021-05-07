@@ -4,7 +4,7 @@
   "description": "Тестовое задание AFFINAGE",
   "main": "index.js",
   "dependencies": {
-    "underscore": "^1.10.2"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
